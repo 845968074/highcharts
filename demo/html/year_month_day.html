@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>JS年月日三级联动下拉框日期选择代码</title>
+</head>
+
+<body>
+
+<form name="reg_testdate">
+    <select name="YYYY" onChange="YYYYDD(this.value)">
+        <option value="">请选择 年</option>
+    </select>
+    <select name="MM" onChange="MMDD(this.value)">
+        <option value="">选择 月</option>
+    </select>
+    <select name="DD">
+        <option value="">选择 日</option>
+    </select>
+</form>
+
+<script src="../js/year_month_day.js"></script>
+</body>
+
+</html>

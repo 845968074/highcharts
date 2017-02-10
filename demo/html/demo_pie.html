@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>JS年月日三级联动下拉框日期选择代码</title>
+    <script type="text/javascript" src="../highcharts/js/jquery-1.8.3.min.js"></script>
+    <script src="http://cdn.hcharts.cn/highcharts/highcharts.js"></script>
+    <script src="http://cdn.hcharts.cn/highcharts/modules/exporting.js"></script>
+    <script src="../js/demo_pie.js"></script>
+</head>
+<div><table class="table  table-bordered">
+    <thead>
+    <tr>
+        <th>
+            <form name="school"><select name="select_school" onchange="get_School(this.value)"><option value="">请选择 学校</option></select>
+            </form></th>
+        <th>
+            <form name="start_data">
+                <select name="start_year" onChange="YYYYDD(this.value)">
+                    <option value="">请选择 年</option>
+                </select>
+                <select name="start_month" onChange="MMDD(this.value)">
+                    <option value="">选择 月</option>
+                </select>
+                <select name="start_day">
+                    <option value="">选择 日</option>
+                </select>
+            </form>
+        </th>
+        <th>
+            <form name="end_date">
+                <select name="end_year" onChange="end_Year(this.value)">
+                    <option value="">请选择 年</option>
+                </select>
+                <select name="end_month" onChange="end_Month(this.value)">
+                    <option value="">选择 月</option>
+                </select>
+                <select name="end_day">
+                    <option value="">选择 日</option>
+                </select>
+            </form>
+        </th>
+        <th>
+            <button value="" id="analyse">分析</button>
+        </th>
+    </tr>
+    </thead>
+</table></div>
+<div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+
+
+</body>
+
+</html>
